@@ -103,7 +103,7 @@ abstract class WindowMixin implements FullscreenManager {
         this.refreshWindowSize();
     }
 
-    @Inject(method = "changeFullscreenVideoMode", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/Window;setMode()V", shift = At.Shift.AFTER))
+    @Inject(method = { "updateFullscreenIfChanged", "changeFullscreenVideoMode" }, at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/platform/Window;setMode()V", shift = At.Shift.AFTER))
     private void onChangeFullscreenVideoMode(CallbackInfo ci) {
         // Make sure that window dimensions are up to date before
         // resizing the GUI based on potentially stale values.
