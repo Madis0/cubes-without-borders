@@ -50,7 +50,8 @@
         "perfect_presentation(incompatible){modrinth:PxF3g9Xm}#(ignore:curseforge)",
         "borderless-fullscreen(incompatible){modrinth:snyXnG3w}#(ignore:curseforge)",
         "simpleqol(incompatible){modrinth:CVIOn7aS}#(ignore:curseforge)",
-        "fw(incompatible){curseforge:227441}#(ignore:modrinth)"
+        "fw(incompatible){curseforge:227441}#(ignore:modrinth)",
+        "chloride(incompatible){modrinth:yD9qW65f}{curseforge:931925}",
       ]
     }
   },
@@ -71,7 +72,8 @@
     "perfect_presentation": "*",
     "borderless-fullscreen": "*",
     "simpleqol": "*",
-    "fw": "*"
+    "fw": "*",
+    "chloride": "*",
   },
   "depends": {
     "fabricloader": ">=${fabric_loader}",
